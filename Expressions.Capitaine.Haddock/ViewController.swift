@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         "Sombre oryctérope",
         "Traîne-potence",
         "Bougres d’extrait de crétins des Alpes",
+        "Cornichon de zouave de tonnerre de Brest",
     ]
     
     // ** Fin de -> Déclaration des propriétés de la classe

@@ -4,7 +4,7 @@
 //
 //  Created by Alain on 2014-07-14.
 //  Copyright (c) 2014 TIM. All rights reserved.
-//
+//  2015 - Ajout à GitHUB
 
 import UIKit
 

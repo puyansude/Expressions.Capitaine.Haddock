@@ -5,14 +5,17 @@
 //  Created by Alain on 2014-07-14.
 //  Copyright (c) 2014 TIM. All rights reserved.
 //  --------------------------------------------------------
-//  2015.08.14 - Projet adapté à Xcode 6.4
-//  2015.08.14 - Ajout à GitHUB
-
+//  M-A-J:
+//          2015.08.14 - Projet adapté à Xcode 6.4
+//          2015.08.14 - Ajout à GitHUB
+//  --------------------------------------------------------
+///  TODO: Valider si l'image 'indice' est disponible
+//
 import UIKit
 
 class ViewController: UIViewController {
 
-    // Déclaration des propriétés de la classe
+    // MARK: Déclaration des propriétés de la classe
     
     /// Tableau contenant de savoureuses expressions
     /// du personnage 'Capitain Haddock'
@@ -33,10 +36,9 @@ class ViewController: UIViewController {
     // ** Fin de -> Déclaration des propriétés de la classe
     
     
-    // Déclaration des liens MVC
+    // MARK: Déclaration des liens MVC
     
     @IBOutlet var expHaddock: UITextView!
-    
     @IBOutlet var imageHaddock: UIImageView!
     
     @IBAction func afficherUneExpression(sender: AnyObject) {
@@ -49,19 +51,20 @@ class ViewController: UIViewController {
 
         println(indice)
         expHaddock.text = "Expression no \(indice): \n\n\(expressionsHaddock[indice])"
+        // FIXME: Prévoir un fichier d'image invalide
         imageHaddock.image = UIImage(named: "haddock\(indice + 1).jpg")
         
-    }  // afficherUneExpression()
+    }  // @IBAction func afficherUneExpression()
     
     // ** Fin de -> Déclaration des liens MVC
     
 
+    // MARK: Surcharge des méthodes de la super classe
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

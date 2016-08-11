@@ -25,6 +25,7 @@
 		B5184CA319744F200021B094 /* haddock9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5184C9919744F200021B094 /* haddock9.jpg */; };
 		B5184CA7197457210021B094 /* haddock_titre.png in Resources */ = {isa = PBXBuildFile; fileRef = B5184CA6197457210021B094 /* haddock_titre.png */; };
 		B5184CA91974587B0021B094 /* tintin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5184CA8197458730021B094 /* tintin.ttf */; };
+		B5A9AE221D5CC0CB006D0AAB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5A9AE211D5CC0CB006D0AAB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B5184C9919744F200021B094 /* haddock9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haddock9.jpg; sourceTree = "<group>"; };
 		B5184CA6197457210021B094 /* haddock_titre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haddock_titre.png; sourceTree = "<group>"; };
 		B5184CA8197458730021B094 /* tintin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tintin.ttf; sourceTree = "<group>"; };
+		B5A9AE211D5CC0CB006D0AAB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		B5184C4D19741AE90021B094 = {
 			isa = PBXGroup;
 			children = (
+				B5A9AE211D5CC0CB006D0AAB /* README.md */,
 				B5184C5819741AE90021B094 /* Expressions.Capitaine.Haddock */,
 				B5184C6B19741AE90021B094 /* Expressions.Capitaine.HaddockTests */,
 				B5184C5719741AE90021B094 /* Products */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A9AE221D5CC0CB006D0AAB /* README.md in Sources */,
 				B5184C5E19741AE90021B094 /* ViewController.swift in Sources */,
 				B5184C5C19741AE90021B094 /* AppDelegate.swift in Sources */,
 			);

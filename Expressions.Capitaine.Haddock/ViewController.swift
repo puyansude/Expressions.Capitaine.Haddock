@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     
     /// Tableau contenant de savoureuses expressions
-    /// du personnage 'Capitain Haddock'
+    /// du personnage 'Capitaine Haddock'
     let expressionsHaddock = [
         "Bachi-bouzouk",
         "Mille millions de mille sabords",

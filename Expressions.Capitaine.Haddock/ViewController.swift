@@ -17,6 +17,9 @@ class ViewController: UIViewController {
 
     // MARK: Déclaration des propriétés de la classe
     
+    private var _compteur = 0
+    
+    
     /// Tableau contenant de savoureuses expressions
     /// du personnage 'Capitain Haddock'
     let expressionsHaddock = [
@@ -46,13 +49,15 @@ class ViewController: UIViewController {
         // Le code de cette fonction sera
         // exécuté suite à un clic du bouton
  
-        let indice = Int(arc4random() % UInt32(expressionsHaddock.count))  // retournera un nombre entre 0 et nbElementsTableauExpressions - 1
+        _compteur+=1
+        
+        let indice = Int(arc4random() % UInt32(expressionsHaddock.count - 1))  // retournera un nombre entre 0 et nbElementsTableauExpressions - 1
         
 
-        print(indice)
+        print("Itération no \(_compteur), indice = \(indice), fichier image = haddock\(indice+1).jpg")
         expHaddock.text = "Expression no \(indice): \n\n\(expressionsHaddock[indice])"
         // FIXME: Prévoir un fichier d'image invalide
-        imageHaddock.image = UIImage(named: "haddock\(indice + 1).jpg")
+        imageHaddock.image = UIImage(named: "haddock\(indice+1).jpg")
         
     }  // @IBAction func afficherUneExpression()
     

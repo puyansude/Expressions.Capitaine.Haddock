@@ -3,11 +3,12 @@
 //  Expressions.Capitaine.Haddock
 //
 //  Created by Alain on 2014-07-14.
-//  Copyright (c) 2014 TIM. All rights reserved.
+//  Copyright (c) 2014-2016 TIM. All rights reserved.
 //  --------------------------------------------------------
 //  M-A-J:
 //          2015.08.14 - Projet adapté à Xcode 6.4
 //          2015.08.14 - Ajout à GitHUB
+//          2016.08.11 - Projet adapté à Xcode 8.0 + swift 3
 //  --------------------------------------------------------
 ///  TODO: Valider si l'image 'indice' est disponible
 //
@@ -15,9 +16,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // MARK: Déclaration des propriétés de la classe
+    // MARK:- Déclaration des propriétés de la classe
     
-    private var _compteur = 0
+    private var _compteur:Int = 0
     
     
     /// Tableau contenant de savoureuses expressions
@@ -39,11 +40,13 @@ class ViewController: UIViewController {
     // ** Fin de -> Déclaration des propriétés de la classe
     
     
-    // MARK: Déclaration des liens MVC
+    // MARK:- Déclaration des liens MVC
     
+    // MARK: Outlets
     @IBOutlet var expHaddock: UITextView!
     @IBOutlet var imageHaddock: UIImageView!
     
+    // MARK: Actions
     @IBAction func afficherUneExpression(_ sender: AnyObject) {
 
         // Le code de cette fonction sera
@@ -64,7 +67,7 @@ class ViewController: UIViewController {
     // ** Fin de -> Déclaration des liens MVC
     
 
-    // MARK: Surcharge des méthodes de la super classe
+    // MARK:- Surcharge des méthodes de la super classe
     
     override func viewDidLoad() {
         super.viewDidLoad()

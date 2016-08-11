@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     @IBOutlet var expHaddock: UITextView!
     @IBOutlet var imageHaddock: UIImageView!
     
-    @IBAction func afficherUneExpression(sender: AnyObject) {
+    @IBAction func afficherUneExpression(_ sender: AnyObject) {
 
         // Le code de cette fonction sera
         // exécuté suite à un clic du bouton
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         let indice = Int(arc4random() % UInt32(expressionsHaddock.count))  // retournera un nombre entre 0 et nbElementsTableauExpressions - 1
         
 
-        println(indice)
+        print(indice)
         expHaddock.text = "Expression no \(indice): \n\n\(expressionsHaddock[indice])"
         // FIXME: Prévoir un fichier d'image invalide
         imageHaddock.image = UIImage(named: "haddock\(indice + 1).jpg")
